@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  font-family: "Roboto Mono", serif;
+  height: 90vh;
+  color: aliceblue;
+  background-image: url("resources/qa-bg.jpg");
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+  bottom: 500px;
+}
+
+img {
+  background-size: cover;
+  z-index: 0;
+}
+
+.url-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+footer {
+  position: relative;
+
+  color: aliceblue;
+}
+
+input {
+  padding-left: 20px;
+  width: 25.7rem;
+  height: 2.8rem;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  color: #fafaf9;
+}
+
+.form {
+  display: flex;
+  margin: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+
+  height: 3.5rem;
+  border-radius: 15px;
+  background-color: #030616;
+  border: 1.5px;
+  border-color: #263fa9;
+  border-style: solid;
+}
+
+button {
+  height: 2.8rem;
+  width: 8rem;
+  border-radius: 10px;
+  color: #f2f5f9;
+  background-color: #263fa9;
+  border: none;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: #f8fafc1a;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+  background-color: #06091e;
+}
+
+button:hover {
+  background-color: #1f369c;
+}
+
+.qrcode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+}
+
+button svg {
+  padding-left: 6px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.qrcode-bk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background-color: #f8fafc1a;
+  border-radius: 50%;
+  margin: 50px;
+}
+
+.qrcode-white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 245px;
+  width: 245px;
+  background-color: #fafaf9;
+  border-radius: 15%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 20.7rem;
+    /* padding: 0 1px; */
+  }
+
+  input {
+    width: 14.5rem;
+  }
+
+  button {
+    height: 2.8rem;
+    width: 5rem;
+  }
+}
